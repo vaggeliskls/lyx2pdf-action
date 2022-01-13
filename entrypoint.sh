@@ -1,5 +1,4 @@
 #!/bin/sh -l
 
-echo "CurrentTime $1"
-time=$(date)
-echo "::set-output name=time::$time"
+echo "Building $1 and and generating pdf"
+lyx --export pdf4 $1
