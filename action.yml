@@ -1,0 +1,15 @@
+ame:
+description: Github Action for generating pdf from lyx
+author: Vaggeliskls
+inputs:
+  root_file:
+    description: The root lyx file to be compiled
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.root_file }}
+branding:
+  icon: book-open
+  color: gray-dark
