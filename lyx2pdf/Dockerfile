@@ -3,8 +3,8 @@ LABEL org.opencontainers.image.authors="Vaggelis Kalligiannakis <vaggeliskls@gma
 WORKDIR /data
 VOLUME /data
 
-RUN apt install software-properties-common -y
-RUN add-apt-repository ppa:lyx-devel/release
-RUN apt-get update
-RUN apt-get install -y texlive-full lyx clean
-RUN rm -rf /var/lib/apt/lists/* 
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install texlive-full -y
+
+RUN add-apt-repository ppa:lyx-devel/release && apt-get update && apt-get install lyx -y
