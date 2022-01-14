@@ -3,7 +3,8 @@ LABEL org.opencontainers.image.authors="Vaggelis Kalligiannakis <vaggeliskls@gma
 COPY LICENSE /LICENSE
 COPY README.md /README.md
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
+# git update-index --chmod=+x ./entrypoint.sh
+COPY ./entrypoint.sh /
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
