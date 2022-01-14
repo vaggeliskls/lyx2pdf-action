@@ -5,7 +5,5 @@ VOLUME /data
 
 RUN sudo add-apt-repository ppa:lyx-devel/release
 RUN sudo apt-get update
-RUN sudo apt-get install -y texlive-full
-RUN sudo apt-get install -y lyx
-RUN sudo apt-get clean7
+RUN sudo apt-get install -y texlive-full lyx
 RUN sudo rm -rf /var/lib/apt/lists/* 
