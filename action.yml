@@ -1,6 +1,6 @@
 ame:
 description: Github Action for generating pdf from lyx
-author: Vaggeliskls
+author: Vaggeliskls <vaggeliskls@gmail.com>
 inputs:
   root_file:
     description: The root lyx file to be compiled
