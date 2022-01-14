@@ -1,9 +1,9 @@
 name: Lyx2Pdf
 
 on:
-  push:
-    tags:
-      - "*"
+  release:
+    types: [published]
+
 jobs:
   ci:
     runs-on: ubuntu-latest
