@@ -1,4 +1,4 @@
-FROM ghcr.io/vaggeliskls/lyx2pdf:latest
+FROM ghcr.io/vaggeliskls/lyx2pdf-action:latest
 LABEL org.opencontainers.image.authors="Vaggelis Kalligiannakis <vaggeliskls@gmail.com>"
 COPY LICENSE /LICENSE
 COPY README.md /README.md
