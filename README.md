@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Compile LaTeX document
+      - name: Generate Pdf from lyx
         uses: vaggeliskls/lyx2pdf@v1
         with:
           root_file: main.lyx
@@ -33,7 +33,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile Lyx document
+      - name: Generate Pdf from lyx
         uses: vaggeliskls/lyx2pdf@v1
         with:
           root_file: main.lyx
